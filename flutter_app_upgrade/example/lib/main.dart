@@ -44,7 +44,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  AppInfo _appInfo;
+  late AppInfo _appInfo;
   List<AppMarketInfo> _appMarketList = [];
   String _installMarkets = '';
 
@@ -92,6 +92,7 @@ class _HomeState extends State<Home> {
           '5、新增加了分类查看功能'
         ],
         force: false,
+          apkDownloadUrl:"https://mouzhong-company-web.oss-cn-hangzhou.aliyuncs.com/assets/apps/manpai-release.apk"
       );
     });
   }
